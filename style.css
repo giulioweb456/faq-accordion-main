@@ -1,0 +1,125 @@
+/* COLOR PALETTE */
+/*
+HTML,BODY f9eeff
+H1 STAR: b727fa
+titles: 321335
+text 826f85
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    /* border: 1px solid grey; */
+    font-family: 'Work sans','Sans serif';
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-color: #f9eeff;
+    background-repeat: no-repeat;
+}
+.container{
+    /* border: 1px solid grey; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    /* border: 1px solid grey; */
+    border-radius: 20px;
+    width: 550px;
+    min-height: 550px;
+    background-color: #ffffff;
+    padding: 40px;
+
+}
+.bigtitle{
+    /* border: 1px solid grey; */
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.titleandbutton{
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+.accordionbutton{
+    display: block;
+    background-image: url(assets/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.accordionbuttonminus{
+    display: none;
+    background-image: url(assets/images/icon-minus.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.accordiontitle{
+    /* border: 1px solid grey; */
+    margin-bottom: 10px;
+}
+
+.accordiontitle p:hover{
+    color: #b727fa;
+}
+
+
+.accordiontext{
+    /* border: 1px solid grey; */
+    margin-bottom: 10px;
+}
+.questions{
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions > *:not(:last-child) {
+    width: 100%;
+    border-bottom: 1px solid #826f8545;
+}
+
+
+
+/* .question1,.question2,.question3,.question4{
+    border-bottom: 1px solid #826f85;
+} */
+
+.accordiontitle{
+    /* border: 1px solid grey; */
+    
+}
+
+.accordiontext{
+    /* border: 1px solid grey; */
+    color: #826f85;;
+}
+
+@media all and (max-width: 375px) {
+    .main{
+        width: 80%;
+    }
+}
